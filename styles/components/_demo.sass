@@ -2,6 +2,8 @@
 	section
 		:margin 60px auto
 
+body 
+	:font-family arial
 
 .navigation 
 	:display flex
@@ -40,11 +42,13 @@ ul.nav
 	:height 600px
 	:position relative
 	h1 
-		:font-size 6.5em
+		:font-size 100px
+		:color rgba(255, 255, 255, 0.2)
 	h2
 		:margin 0 auto
-		:width 70%
-		:font-size 3.5em
+		:width 60%
+		:font-size 60px
+		:color #fff
 
 .inner
 	:text-align center
@@ -62,26 +66,30 @@ ul.nav
 	:position relative
 	:color #5a5a5a
 	:display flex
-	:line-height 30px
+	:line-height 28px
 	:margin-top 3%
+	:font-size 16px
 	.leftCollumn
 		:padding 2%
+		:width 50%
 	.rightCollumn
 		:padding 2%
+		:width 50%
 
 .about:before
-    :content ''
-    :color #5a5a5a
-    :width 95%
-    :border-bottom solid 1px black
-    :position absolute
-    :left 23px
-    :top 3%
-    :z-index 1
+	:content ''
+	:color #5a5a5a
+	:width 95%
+	:border-bottom solid 1px black
+	:position absolute
+	:left 23px
+	:top 3%
+	:z-index 1
 
 .strategies
 	:position relative
 	:margin-top 5%
+	:line-height 28px
 
 .boxes
 	:justify-content center
@@ -90,34 +98,32 @@ ul.nav
 	:text-align center
 	:margin-top 2.5%
 	:margin-bottom 5%
-    
 
 
 
 .title 
-	:font-size 1.5em
+	:font-size 22px
 	:font-weight bold
-	:line-height 30px
+	:line-height 28px
 	:width 35%
 	:margin 0 auto
 	:text-align center
-    
 
 .strategies:before
-    :content ''
-    :width 100%
-    :border-bottom solid 5px #452882
-    :position absolute
-    :top -5%
-    :z-index 1
+	:content ''
+	:width 100%
+	:border-bottom solid 5px #452882
+	:position absolute
+	:top -5%
+	:z-index 1
 
 .strategies:after
-    :content ''
-    :width 100%
-    :border-bottom solid 5px #452882
-    :position absolute
-    :top 16%
-    :z-index 1
+	:content ''
+	:width 100%
+	:border-bottom solid 5px #452882
+	:position absolute
+	:top 16%
+	:z-index 1
 
 .box1 
 	:background-image url('images/strategy.jpg') 
@@ -165,10 +171,10 @@ ul.nav
 	:margin-bottom 5%
 
 .hoverEffect button 
-    :background none
-    :color white
-    :border 1px solid white
-    :padding 3%
+	:background none
+	:color white
+	:border 1px solid white
+	:padding 3%
 
 .footer 
 	:background black
@@ -208,10 +214,14 @@ ul.nav
 //EVALUATION STYLING//
 
 .pageh1 
-	:margin-left 5%
+	:margin-left 42px
+	:margin-top 70px
+
+.pageh2 
+	:font-size 63px
 
 .header-evaluation
-	:height 500px
+	:height 420px
 
 .strategy_description
 	:margin-left 15%
@@ -225,7 +235,7 @@ ul.nav
 
 p.strategy_description
 	:width 50%
-	:font-size 1.25em
+	:font-size 21px
 
 .videos 
 	:margin-top 5%
@@ -235,7 +245,7 @@ p.strategy_description
 	:justify-content center
 	:box-shadow 5px 5px 5px rgba(212,212,212,1)
 	:padding 2.5%
-    :margin 30px
+	:margin 30px
 
 .video_left 
 	:width 20%
@@ -249,3 +259,7 @@ p.strategy_description
 	.video_description
 		:line-height 22px
 
+//SLIDER
+
+.flickity-viewport
+	:height 400px
