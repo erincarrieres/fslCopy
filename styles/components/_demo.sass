@@ -34,6 +34,8 @@ ul.nav
 			:text-decoration none
 			:color white
 			:margin-right 50px
+		a:visited
+			:text-decoration underline
 
 .header 
 	:height 50vh
@@ -44,11 +46,15 @@ ul.nav
 	h1 
 		:font-size 100px
 		:color rgba(255, 255, 255, 0.2)
+		:font-weight lighter
+		:margin-top 190px
+		:margin-bottom 0px
 	h2
 		:margin 0 auto
-		:width 60%
+		:width 50%
 		:font-size 60px
 		:color #fff
+		:font-weight lighter
 
 .inner
 	:text-align center
@@ -78,12 +84,11 @@ ul.nav
 
 .about:before
 	:content ''
-	:color #5a5a5a
 	:width 95%
-	:border-bottom solid 1px black
+	:border-bottom solid 1px #8A8A8A
 	:position absolute
 	:left 23px
-	:top 3%
+	:top 18px
 	:z-index 1
 
 .strategies
@@ -104,7 +109,7 @@ ul.nav
 .title 
 	:font-size 22px
 	:font-weight bold
-	:line-height 28px
+	:line-height 30px
 	:width 35%
 	:margin 0 auto
 	:text-align center
@@ -114,7 +119,7 @@ ul.nav
 	:width 100%
 	:border-bottom solid 5px #452882
 	:position absolute
-	:top -5%
+	:top -12.5px
 	:z-index 1
 
 .strategies:after
@@ -122,8 +127,13 @@ ul.nav
 	:width 100%
 	:border-bottom solid 5px #452882
 	:position absolute
-	:top 16%
+	:top 70px
 	:z-index 1
+
+.full-width-box 
+	:width 100%
+	:position absolute
+	:z-index 0
 
 .box1 
 	:background-image url('images/strategy.jpg') 
@@ -133,6 +143,7 @@ ul.nav
 	:height 350px
 	:border-radius 5%
 	:position relative
+	:overflow hidden
 
 .box2 
 	:background-image url('images/strategy.jpg') 
@@ -142,6 +153,7 @@ ul.nav
 	:height 350px
 	:border-radius 5%
 	:position relative
+	:overflow hidden
 
 .box3 
 	:background-image url('images/strategy.jpg') 
@@ -151,6 +163,7 @@ ul.nav
 	:height 350px
 	:border-radius 5%
 	:position relative
+	:overflow hidden
 
 .hoverEffect 
 	:position absolute
@@ -158,23 +171,45 @@ ul.nav
 	:left 0
 	:right 0
 	:bottom 0
+	:transform translate(0px,200px)
 	:background rgba(69,40,130,0.85)
 	:z-index 1
 	:border-radius 5%
 	:color white
+	:transition all 0.5s linear
+
+
 
 .hoverEffect p
 	:margin 0 auto
 	:width 75%
 	:font-size 1.5em
-	:margin-top 30%
-	:margin-bottom 5%
+	:margin-top 50px
+	:margin-bottom 50px
 
 .hoverEffect button 
 	:background none
 	:color white
 	:border 1px solid white
 	:padding 3%
+
+.box1:hover .move-up 
+	:transform translate(0,0px)
+	:-webkit-transform translate(0,0px)
+	:-o-transform translate(0,0px) 
+	:-moz-transform translate(0,0px)
+
+.box2:hover .move-up 
+	:transform translate(0,0px)
+	:-webkit-transform translate(0,0px)
+	:-o-transform translate(0,0px) 
+	:-moz-transform translate(0,0px)
+
+.box3:hover .move-up 
+	:transform translate(0,0px)
+	:-webkit-transform translate(0,0px)
+	:-o-transform translate(0,0px) 
+	:-moz-transform translate(0,0px)
 
 .footer 
 	:background black
@@ -184,14 +219,21 @@ ul.nav
 	:position relative
 
 .footer i 
-	:font-size 2em
-	:padding 10%
+	:font-size 2rem
+	:width 50px
+	:height 50px
+	:line-height 50px
+	:text-align center
 	:border-radius 50%
 	:margin 0 5px
 	:border 1px solid white
 
 .footer i.fa.fa-instagram
-	:padding 12%    
+	// :padding 12%    
+
+.footer i.fa.fa-facebook
+	// :padding 16% 
+	// :font-size 1.95em
 
 .footer .logo p
 	:font-size 1.5em
@@ -215,7 +257,7 @@ ul.nav
 
 .pageh1 
 	:margin-left 42px
-	:margin-top 70px
+
 
 .pageh2 
 	:font-size 63px
@@ -224,7 +266,7 @@ ul.nav
 	:height 420px
 
 .strategy_description
-	:margin-left 15%
+	:margin-left 170px
 
 .inner-evaluation
 	:color white
@@ -232,34 +274,66 @@ ul.nav
 
 .inner-evaluation h1.pageh1
 	:color rgba(255,255,255,0.25)
+	:margin-top 70px
+
+.inner-evaluation h2.pageh2
+	:margin-bottom -20px
+	:margin-left 170px
+	:margin-top 25px
+
 
 p.strategy_description
-	:width 50%
+	:width 45%
 	:font-size 21px
+	:line-height 30px
 
 .videos 
-	:margin-top 5%
+	:margin-top 80px
 
 .video
 	:display flex
 	:justify-content center
-	:box-shadow 5px 5px 5px rgba(212,212,212,1)
+	:box-shadow 3px 3px 2px rgba(212,212,212,1)
 	:padding 2.5%
 	:margin 30px
+	:padding-top 0%
 
 .video_left 
 	:width 20%
+	:padding-left 30px
+	:padding-top 25px
 
 .video_right 
 	:width 70%
 	.video_title
 		:font-weight bold
 		:font-size 1.5em
-		:margin-bottom -5px
+		:margin-bottom 0px
+		:width 75%
 	.video_description
 		:line-height 22px
+		:width 90%
 
 //SLIDER
 
 .flickity-viewport
 	:height 400px
+
+.flickity-prev-next-button .arrow 
+	:fill white !important
+
+.flickity-prev-next-button
+	:background hsla(0,0%,0%,0) !important
+
+
+//VIDEO SLIDER
+
+.fancybox-content 
+	:position absolute !important
+	:left 0 !important
+
+.fancybox-caption-wrap 
+	:top 0 !important
+	:width 20% !important
+	:right 0 !important
+	:left auto !important

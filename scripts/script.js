@@ -7,4 +7,8 @@ $( document ).ready(function() {
 	  contain: true
 	});
 
+	$("[data-fancybox]").fancybox({
+		slideShow : true
+	});
+
 });
