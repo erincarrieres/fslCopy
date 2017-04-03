@@ -43,16 +43,18 @@ ul.nav li:hover
 
 .header 
 	:height 50vh
-	:background-image url('images/fpoHeader.jpg') 
-	:background-position: 5px 785px;
+	:background-image url('images/headerImage.jpg') 
+	:background-position: 5px 815px;
 	:background-size cover
 	:height 600px
 	:position relative
 	h1 
-		:font-size 100px
-		:color rgba(255, 255, 255, 0.2)
+		:font-size 40px
+		:color white
 		:font-weight lighter
-		:margin-top 190px
+		:width 55%
+		:margin 0 auto
+		:margin-top 115px
 		:margin-bottom 0px
 	h2
 		:margin 0 auto
@@ -71,152 +73,31 @@ ul.nav li:hover
 	:left 0
 	:right 0
 
-
+.videoImage
+	:position absolute
+	:background white
+	:border 60px solid white
+	:border-radius 50px
+	:margin-left 22.5%
+	:margin-top 25%
 
 .about 
 	:position relative
 	:color #5a5a5a
-	:display flex
-	:line-height 28px
-	:margin-top 3%
-	:font-size 16px
-	.leftCollumn
-		:padding 2%
-		:width 50%
-	.rightCollumn
-		:padding 2%
-		:width 50%
-
-.about:before
-	:content ''
-	:width 95%
-	:border-bottom solid 1px #8A8A8A
-	:position absolute
-	:left 23px
-	:top 18px
-	:z-index 1
-
-.strategies
-	:position relative
-	:margin-top 5%
-	:line-height 28px
-	a
-		:text-decoration none
-		:color white
-		:height 25px
-		:border 1px solid white
-		:padding 10px
-		:border-radius 50px
-
-.boxes
-	:justify-content center
-	:display flex
-	:width 100%
-	:text-align center
-	:margin-top 2.5%
-	:margin-bottom 5%
-
-
-
-.title 
-	:font-size 22px
-	:font-weight bold
 	:line-height 30px
-	:width 35%
+	:display flex
 	:margin 0 auto
-	:text-align center
-
-.strategies:before
-	:content ''
-	:width 100%
-	:border-bottom solid 5px #452882
-	:position absolute
-	:top -12.5px
-	:z-index 1
-
-.strategies:after
-	:content ''
-	:width 100%
-	:border-bottom solid 5px #452882
-	:position absolute
-	:top 70px
-	:z-index 1
-
-.full-width-box 
-	:width 100%
-	:position absolute
-	:z-index 0
-
-.box1 
-	:background-image url('images/seval.jpg') 
-	:background-position -25px
-	:background-size cover
-	:width 32%
-	:margin 1%
-	:height 350px
-	:border-top-left-radius 5%
-	:border-top-right-radius 5%
-	:position relative
-	:overflow hidden
-
-.box2 
-	:background-image url('images/sinter.jpg') 
-	:background-position 0px -55px
-	:background-size cover
-	:width 32%
-	:margin 1%
-	:height 350px
-	:border-top-left-radius 5%
-	:border-top-right-radius 5%
-	:position relative
-	:overflow hidden
-
-.box3 
-	:background-image url('images/sped.jpg') 
-	:background-size cover
-	:width 32%
-	:margin 1%
-	:height 350px
-	:border-top-left-radius 5%
-	:border-top-right-radius 5%
-	:position relative
-	:overflow hidden
-
-.hoverEffect 
-	:position absolute
-	:top 0
-	:left 0
-	:right 0
-	:bottom 0
-	:transform translate(0px,200px)
-	:background rgba(69,40,130,0.85)
-	:z-index 1
-	:border-radius 0%
-	:color white
-	:transition all 0.5s linear
-
-
-
-.hoverEffect p
-	:margin 0 auto
-	:width 75%
-	:margin-top 50px
-	:margin-bottom 50px
-	:font-size 28px
-	:line-height 33px
-
-.hoverEffect button 
-	:background none
-	:color white
-	:border 1px solid white
-	:padding 3%
-
-.boxes
-	>div:hover .move-up
-		:transform translate(0,0px)
-		:-webkit-transform translate(0,0px)
-		:-o-transform translate(0,0px) 
-		:-moz-transform translate(0,0px)
+	:font-size 16px
+	:width 85%
+	:margin-bottom 0px
+	.leftCollumn
+		:padding 5%
+		:width 50%
+		:padding-top 0px
+	.rightCollumn
+		:padding 5%
+		:width 50%
+		:padding-top 0px
 
 .footer 
 	:background black
@@ -260,86 +141,6 @@ ul.nav li:hover
 	:display flex
 
 
-//EVALUATION STYLING//
-
-.pageh1 
-	:margin-left 42px
-
-
-.pageh2 
-	:font-size 63px
-
-.header-evaluation
-	:height 420px
-	:background-image url('images/evaluationHeader.jpg')
-
-.header-intervention
-	:height 420px
-	:background-image url('images/interventionHeader.jpg')
-	:background-position: 5px 660px;
-
-.header-pedagogy
-	:height 420px
-	:background-image url('images/pedagogyHeader.jpg')
-	:background-position: 5px 660px;
-
-
-.strategy_description
-	:margin-left 170px
-
-.inner-evaluation
-	:color white
-	:text-align left
-
-.inner-evaluation h1.pageh1
-	:color rgba(255,255,255,0.25)
-	:margin-top 70px
-
-.inner-evaluation h2.pageh2
-	:margin-bottom -20px
-	:margin-left 170px
-	:margin-top 25px
-
-
-p.strategy_description
-	:width 45%
-	:font-size 21px
-	:line-height 30px
-
-.videos 
-	:margin-top 80px
-
-.video
-	:display flex
-	:justify-content center
-	:box-shadow 3px 3px 2px rgba(212,212,212,1)
-	:padding 2.5%
-	:margin 30px
-	:padding-top 0%
-
-a.video
-	:display flex
-	:justify-content center
-	:box-shadow 3px 3px 2px rgba(212,212,212,1)
-	:padding 2.5%
-	:margin 30px
-	:padding-top 0%
-
-.video_left 
-	:width 20%
-	:padding-left 30px
-	:padding-top 25px
-
-.video_right 
-	:width 70%
-	.video_title
-		:font-weight bold
-		:font-size 1.5em
-		:margin-bottom 0px
-		:width 75%
-	.video_description
-		:line-height 22px
-		:width 90%
 
 //SLIDER
 
@@ -434,75 +235,33 @@ span
 	:font-size 30px
 
 
-//KEYFRAMES
-
-@keyframes aslide
-	0%
-		:border-radius 0% 
-	100%
-		:border-radius 5%  
-
-@keyframes slider
-	0%  
-		:border-radius 0%
-	100%
-		:border-radius 5% 
-
-
-.move-up:hover 
-	:animation slider 0.5s linear
-	:animation aslide 0.5s linear
-
-.allbox:hover
-	:animation aslide 0.5s linear
-
-//hamburger menu
-// .hamburger{
-//   background:none;
-//   position:absolute;
-//   top:0;
-//   right:0;
-//   line-height:45px;
-//   padding:5px 15px 0px 15px;
-//   color:#999;
-//   border:0;
-//   font-size:1.4em;
-//   font-weight:bold;
-//   cursor:pointer;
-//   outline:none;
-//   z-index:10000000000000;
-// }
-// .cross{
-//   background:none;
-//   position:absolute;
-//   top:0px;
-//   right:0;
-//   padding:7px 15px 0px 15px;
-//   color:#999;
-//   border:0;
-//   font-size:3em;
-//   line-height:65px;
-//   font-weight:bold;
-//   cursor:pointer;
-//   outline:none;
-//   z-index:10000000000000;
-// }
-
-// @media (min-width:600px)
-// 	.mobile
-// 		:display:block
-
 //MediaQueries
+@media (max-width:1100px)
+	.videoImage
+		:margin-left 14.5%
+		:margin-top 33%
+	.inner h1
+		:width 50%
+
+	p.aboutTitle:before
+		:left 115px
+
+	p.aboutTitle:after
+		:left 640px
+
 @media (max-width:900px)
 	.header 
 		:height 450px
 		h1
-			:font-size 70px
-			:margin-top 70px
+			:font-size 50px
+			:margin-top 150px
+			:width 90%
 		h2
 			:font-size 50px
 			:width 90%
 
+	.videoImage
+		:display none
 
 	.title 
 		:width 80%
@@ -526,11 +285,69 @@ span
 	.fancybox-caption-wrap 
 		:width 30% !important
 
+	.about .indexContent
+		:display block
+
+	.about .leftCollumn
+		:width 100%
+
+	.about .rightCollumn
+		:width 100%
+
+	.main
+		:margin-top 40px !important
+
+	p.aboutTitle:before
+		:left 95px
+
+	p.aboutTitle:after
+		:left 510px
+
+	.conversationHeader .leftConvo img
+		:width 90%
+
+	.conversationHeader .rightConvo
+		:width 50% !important
+		:margin-left 0px !important
+
+	.conversationHeader p.convoHeader
+		:font-size 25px !important
+
+	.bannerOne .bannerLeft
+		:padding-left 110px
+
+	.bannerOne .bannerRight .bannerContent 
+		:width 90%
+
+	.bannerTwo .bannerLeft
+		:padding-left 110px
+
+	.bannerTwo .bannerRight .bannerContent 
+		:width 90%
+
+	.inner-cell .cell-left img 
+		:margin-left 60px !important
+
+	.inner-cell .cell-right
+		:font-size .9em !important
+
+	.convTitle:before
+		:width 0%!important
+
+	.convTitle:after
+		:width 0%!important
+
+	.resourcesBanner .reso 
+		:margin-left 75px
+
+	.resourceFlex .resourceLeft
+		:width 50%
+
 @media (max-width:600px)
 	.header 
 		:height 300px
 		h1
-			:font-size 60px
+			:font-size 45px
 			:margin-top 70px
 		h2
 			:font-size 40px
@@ -614,6 +431,44 @@ span
 		:pointer-events none
 		:margin-top 90%
 
+	p.aboutTitle:before
+		:width 0%
+
+	p.aboutTitle:after
+		:width 0%
+
+	div.conversationHeader
+		:display block
+
+	.conversationHeader .leftConvo img 
+		:width 100%
+
+	.conversationHeader .rightConvo 
+		:width 95% !important
+		:margin-top 50px !important
+		:border-left 0px solid !important
+
+	.convoVideo .vidFlex
+		:display block
+		:width 50%
+
+	.convoVideo .cVidOne
+		:margin-bottom 10px
+
+	.convoVideo .cVidOne i
+		:margin-top -15px
+
+	.bannerOne .bannerLeft
+		:padding-left 40px
+
+	.bannerTitle
+		:padding-top 35px
+
+	.tab 
+		:font-size .75em
+
+	.tabcontent
+		:font-size .75em
 
 
 @media (max-width:500px)
@@ -626,6 +481,8 @@ span
 		:font-size 18px
 
 	.header
+		h1
+			:font-size 40px
 		h2
 			:font-size 30px
 
@@ -660,4 +517,304 @@ span
 		:font-size 15px
 		:padding 10px
 
+//index
+.flexAbout 
+	:display flex
 
+.indexContent 
+	:display flex
+
+.main
+	:margin-top 300px
+
+.aboutTitle
+	:font-size 30px
+	:font-family arial
+	:text-align center
+	:font-weight bold
+	:padding-bottom 20px
+	:position relative
+	:margin-bottom 0px
+
+.aboutTitle:before
+	:content ''
+	:width 25%
+	:border-bottom solid 1px #3D4255
+	:position absolute
+	:left 135px
+	:top 18px
+	:z-index 1
+.aboutTitle:after
+	:content ''
+	:width 25%
+	:border-bottom solid 1px #3D4255
+	:position absolute
+	:left 775px
+	:top 18px
+	:z-index 1
+//Conversations
+.conversationHeader
+	:padding-top 10%
+	:display flex 
+	:margin-bottom 95px
+	p.convoHeader
+		:font-size 30px
+		:font-weight bold
+		:margin-top 0px
+		:margin-bottom 0px
+	p.convoInfo
+		:line-height 30px
+		:color #606060
+	.rightConvo
+		:width 39%
+		:margin-left 55px
+		:padding-left 55px
+		:position relative
+		:border-left 1px solid black
+
+
+//Banners
+.bannerOne
+	:background #9197E5 
+	:color blacks
+	:display flex
+	:height 250px
+
+.bannerTwo
+	:background #303030
+	:color white
+	:display flex
+	:height 200px
+
+.bannerLeft
+	:width 40%
+	:padding-left 380px
+	:padding-top 35px
+
+.bannerRight
+	:width 60%
+
+.bannerTitle
+	:font-size 40px
+	:font-style italic
+	:font-weight bold
+	:margin-top 0px
+	:margin-bottom 0px
+	:padding-top 55px
+
+.bannerContent
+	:line-height 30px
+	:margin-top 0px
+	:width 60%
+
+//
+.inner-cell .cell-left
+	:width 35%
+	img
+		:margin-top 70px
+		:margin-left 150px
+
+.cell-right p
+	:color #F7FCFD
+
+p.cellTitle
+	:font-size 30px
+	:margin-bottom -10px
+	:margin-top 55px !important
+	:font-weight bold
+	:color white
+
+.inner-cell .cell-right
+	:font-size 20px
+	:width 65%
+	:margin-left 45px
+
+.inner-cell .cell-right p
+	:line-height 30px
+	:width 85%
+	:margin-top 0px
+	:margin-bottom 0px
+
+
+p.caroInfoTitle
+	:font-weight bold !important
+	:margin-top 40px !important
+	:color white
+
+//ConvoBanner
+.convTitle
+	:font-size 30px
+	:font-family arial
+	:text-align center
+	:font-weight bold
+	:padding-bottom 20px
+	:position relative
+
+.convTitle:before
+	:content ''
+	:width 20%
+	:border-bottom solid 1px #3D4255
+	:position absolute
+	:left 285px
+	:top 18px
+	:z-index 1
+.convTitle:after
+	:content ''
+	:width 20%
+	:border-bottom solid 1px #3D4255
+	:position absolute
+	:left 850px
+	:top 18px
+	:z-index 1
+
+.convoVideo
+	:background-color #EBEBEB
+	:padding-top 50px
+	:padding-bottom 50px
+
+.cVidOne
+	:background white
+	:padding 20px
+	:border-radius 5px
+	:margin-right 20px
+	i 
+		:width 25px
+		:height 25px
+		:line-height 25px
+		:text-align center
+		:border-radius 50%
+		:background #452882
+		:color white
+		:float right
+
+.vidFlex 
+	:display flex
+	:width 100%
+	:justify-content center
+
+.vidTitle
+	:margin-bottom 0px
+	:font-weight bold
+
+.vidCont
+	:margin-top 0px
+
+//Convo Carousel
+
+.main-carousel
+	:height 400px !important
+
+.cellOne 
+	:background #20A0C1 !important
+	:color white !important
+	:height 400px !important
+
+.cellTwo 
+	:background #CA81F7 !important
+	:color white !important
+	:height 400px !important
+
+//Resource Banner
+
+.reso 
+	:margin-left 230px
+	:padding-top 30px
+	:padding-bottom 60px
+
+.resourcesBanner
+	:background #EBEBEB
+	// :margin-top -35px
+
+.resourcesTitle
+	:font-size 32px
+	:font-weight bold
+	:font-style italic
+	:position relative
+
+.resourcesTitle:after
+	:content ''
+	:width 80%
+	:border-bottom solid 1px #8A8A8A
+	:position absolute
+	:left 0px
+	:top 60px
+	:z-index 1
+
+.resourceFlex
+	:display flex
+	:margin-top 50px
+
+.resourceLeft
+	:width 40%
+
+.resourceRight
+	:width 40%
+
+.rTitle
+	:font-weight bold
+	:margin-top 25px
+	:width 90%
+
+p.rContent
+	:margin-top -14px
+
+//TAB SECTION 
+
+/* Style the tab */
+div.tab 
+	:overflow hidden
+	:background-color #3B4254
+
+.tablinks
+	:color #FFFFFF
+
+h3
+	:color #FFFFFF
+	:font-size 32px
+	:margin-bottom 0px
+
+.tabContent p
+	:font-size 16px
+
+/* Style the buttons inside the tab */
+div.tab button 
+	:background-color #5F6A87
+	:float left
+	:border none
+	:outline none
+	:cursor pointer
+	:padding 25px 16px
+	:transition 0.3s
+	:width 16.6%
+	:border-left 1px solid #3B4254
+
+
+/* Change background color of buttons on hover */
+div.tab button:hover 
+	:background-color #ddd
+
+
+/* Create an active/current tablink class */
+div.tab button.active 
+	:background-color #3B4254
+
+.videoFlex a 
+	:padding-right 95px
+	:padding-bottom 50px
+	img
+		:width 120%
+/* Style the tab content */
+.tabcontent 
+	:display none
+	:padding 6px 12px
+	:border-top none
+	:background #3B4254
+	:color #AFBCC4
+	p
+		:line-height 25px
+
+
+.videoFlex
+	:display flex
+
+//Anchors
