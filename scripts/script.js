@@ -1,4 +1,10 @@
 $( document ).ready(function() {
+
+	$("[data-fancybox]").fancybox({
+      slideShow : false,
+      thumbs : false
+
+    });
     
 
 	$('.main-carousel').flickity({
@@ -7,9 +13,6 @@ $( document ).ready(function() {
 	  contain: true
 	});
 
-	$("[data-fancybox]").fancybox({
-		slideShow : true
-	});
 
 //SMOOTH SCROLL
 
@@ -20,7 +23,7 @@ $( document ).ready(function() {
 	        scrollTop: $( $.attr(this, 'href') ).offset().top
 	    }, 500);
 	});
-});
+
 
 function openCity(evt, cityName) {
     // Declare all variables
